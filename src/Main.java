@@ -12,7 +12,7 @@ public class Main {
         TelegramBotsApi botsApi = new TelegramBotsApi();
         // TODO Register our bot
         try {
-            botsApi.registerBot(new BotApi20());
+            botsApi.registerBot(new FoxHuntBot());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
