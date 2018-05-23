@@ -1,7 +1,7 @@
 public class Group {
     private String name;
     private int questionid;
-    private char[] answers[10];
+    private char[] answers = new char[10];
 
     public Group(String name){
         this.name = name;
@@ -12,9 +12,10 @@ public class Group {
     }
 
     public Boolean enterSecret(String code) {
-        if(code.contentEqual("henk")) {
-            this.questiondid = 1;
+        if(code.contentEquals("henk")) {
+            this.questionid = 1;
         }
+		return false;	//Wrong secret
     }
 
     public Boolean answerQuestion(char answer) {
