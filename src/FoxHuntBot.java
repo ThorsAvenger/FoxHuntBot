@@ -18,7 +18,7 @@ import static java.lang.Math.toIntExact;
 
 
 
-public class BotApi20 extends TelegramLongPollingBot {
+public class FoxHuntBot extends TelegramLongPollingBot {
 
     public static HashMap<Long, Group> groups = new HashMap();
     public static HashMap<Long, Boolean> starting = new HashMap();
